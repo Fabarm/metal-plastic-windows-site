@@ -3,6 +3,7 @@ import modals from "./modules/modals";
 import tabs from "./modules/tabs";
 import forms from './modules/forms';
 import changeModalState from "./modules/changeModalState";
+import checkNumInputs from "./modules/checkNumInputs";
 
 window.addEventListener('DOMContentLoaded', () => {
     "use strict"
