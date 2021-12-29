@@ -19,7 +19,6 @@ const modals = () => {
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
                 document.body.style.marginRight = `${scroll}px`;
-                // document.body.classList.add('modal-open');
             })
         });
 
@@ -31,10 +30,7 @@ const modals = () => {
             modal.style.display = 'none';
             document.body.style.overflow = '';
             document.body.style.marginRight = `0px`;
-            // document.body.classList.remove('modal-open');
         });
-
-
 
         modal.addEventListener('click', (e) => {
             if(e.target === modal && closeClickOverlay){
@@ -45,7 +41,6 @@ const modals = () => {
                 modal.style.display = 'none';
                 document.body.style.overflow = '';
                 document.body.style.marginRight = `0px`;
-                // document.body.classList.remove('modal-open');
             }
         });
     }
@@ -77,7 +72,7 @@ const modals = () => {
     bindModal('.popup_calc_button', '.popup_calc_profile', '.popup_calc_profile_close', false);
     bindModal('.popup_calc_profile_button', '.popup_calc_end', '.popup_calc_end_close', false);
 
-    // showModalByTime('.popup', 30000)
+    showModalByTime('.popup', 30000);
 };
 
 export default modals;
